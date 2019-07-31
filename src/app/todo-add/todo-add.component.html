@@ -1,0 +1,13 @@
+<form class="todo-form" fxLayout="row" [formGroup]="todoForm">
+<div fxFlex>
+<input class="todo-task todo-btn" formControlName="task" placeholder="Add new task" value="">
+</div>
+<div fxFlex="15">
+<input  class="todo-delivery todo-btn" formControlName="delivery" placeholder="time" [ngxTimepicker]="picker" >
+<ngx-material-timepicker #picker></ngx-material-timepicker>
+</div>
+<div fxFlex="25">
+    <button type="button" mat-flat-button color="primary" (click)="addTask()">Add Task +</button>
+    
+</div>
+</form>

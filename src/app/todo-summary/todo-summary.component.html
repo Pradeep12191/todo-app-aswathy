@@ -1,0 +1,23 @@
+<mat-card>
+    <mat-card-content>
+<div fxLayout="column" fxLayoutGap="25px">
+<div class="value" fxLayout="row">
+<div fxFlex="60" >Total Tasks</div>
+<div class="value primary" fxFlex>{{todos.length}}</div>
+</div>
+<div class="value" fxLayout="row">
+        <div fxFlex="60" >Pending</div>
+        <div class="value primary" fxFlex>{{filterdo('pending').length}}</div>
+        </div>
+        <div class="value" fxLayout="row">
+                <div fxFlex="60" >Doing</div>
+                <div class="value primary" fxFlex>{{filterdo('doing').length}}</div>
+                </div>
+                <div class="value" fxLayout="row">
+                        <div fxFlex="60" >Completed</div>
+                        <div class="value primary" fxFlex>{{filterdo('completed').length}}</div>
+                        </div>
+</div>
+
+    </mat-card-content>
+</mat-card>
